@@ -1,0 +1,37 @@
+.text-field {
+	&__label {
+		display: inline-block;
+		font-weight: 500;
+		margin-bottom: 7px;
+		color: #756f86;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		border-radius: 6px;
+		box-shadow: 0px 4px 8px 0px rgba(#2c2738, 0.04);
+		padding: 15px;
+		border: none;
+		color: #2c2738;
+		outline: none;
+		border: 1px solid #dbe2ea;
+
+		&::placeholder {
+			color: #7c9cbf;
+		}
+
+		&:focus {
+			padding: 14px;
+			border: 2px solid #0880ae;
+			box-shadow: 0px 4px 8px 0px rgba(#2c2738, 0.04);
+		}
+	}
+
+	&__validation-error {
+		font-size: 14px;
+		line-height: 18px;
+		color: #ff7171;
+		margin-top: 8px;
+	}
+}

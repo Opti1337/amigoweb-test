@@ -1,0 +1,83 @@
+// .checkbox {
+// 	display: block;
+
+// 	&__input {
+// 		position: absolute;
+// 		opacity: 0;
+// 		margin: 0;
+
+// 		&:focus + .checkbox__label::before,
+// 		&:active + .checkbox__label::before {
+// 			border: 2px solid #0880ae;
+// 			box-shadow: 0px 4px 8px 0px rgba(#2c2738, 0.04);
+// 		}
+
+// 		&:checked + .checkbox__label::before {
+// 			background-image: url('/check-mark.svg');
+// 			background-position: center;
+// 			border: 2px solid #0880ae;
+// 			box-shadow: 0px 4px 8px 0px rgba(#2c2738, 0.04);
+// 		}
+// 	}
+
+// 	&__label {
+// 		position: relative;
+// 		cursor: pointer;
+// 		padding: 0;
+// 		font-weight: 500;
+// 		font-size: 16px;
+// 		line-height: 28px;
+
+// 		&::before {
+// 			content: '';
+// 			box-sizing: border-box;
+// 			margin-right: 8px;
+// 			display: inline-block;
+// 			vertical-align: text-top;
+// 			width: 28px;
+// 			height: 28px;
+// 			background: #fff;
+// 			border-radius: 6px;
+// 			border: 1px solid #dbe2ea;
+// 			box-shadow: 0px 4px 8px 0px rgba(#2c2738, 0.04);
+// 		}
+// 	}
+// }
+
+.checkbox {
+	display: block;
+	padding-left: 36px;
+	
+	&__input {
+		width: 28px;
+		height: 28px;
+		appearance: none;
+		margin: 0px 8px 0px -36px;
+		border-radius: 6px;
+		background-color: #fff;
+		border: 1px solid #dbe2ea;
+		outline: none;
+		vertical-align: top;
+
+		&:focus,
+		&:active,
+		&:checked {
+			border: 2px solid #0880ae;
+			box-shadow: 0px 4px 8px 0px rgba(#2c2738, 0.04);
+		}
+
+		&:checked {
+			background-image: url('/check-mark.svg');
+			background-size: contain;
+			background-position: center;
+		}
+	}
+
+	&__label {
+		display: inline-block;
+		line-height: 21px;
+		font-weight: 500;
+		color: #756f86;
+		margin-top: 3px;
+	}
+}

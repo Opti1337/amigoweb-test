@@ -1,0 +1,60 @@
+.dropdown {
+	position: relative;
+
+	&__label {
+		margin-bottom: 7px;
+		font-weight: 500;
+		color: #756f86;
+	}
+
+	&__trigger {
+		display: block;
+		width: 100%;
+		text-align: left;
+		border: 1px solid #dbe2ea;
+		padding: 15px;
+		background-color: #fff;
+		border-radius: 6px;
+		background-image: url('/chevron-bottom.svg');
+		background-repeat: no-repeat;
+		background-position: center right 10px;
+		box-shadow: 0px 4px 8px 0px rgba(#2c2738, 0.04);
+		outline: none;
+		cursor: pointer;
+
+		&:focus,
+		&:active,
+		&_active {
+			padding: 14px;
+			border: 2px solid #0880ae;
+			box-shadow: 0px 4px 8px 0px rgba(#2c2738, 0.04);
+			background-position: center right 9px;
+		}
+	}
+
+	&__content {
+		position: absolute;
+		width: 100%;
+		top: calc(100% + 4px);
+		background-color: #fff;
+		padding: 11px 0;
+		border-radius: 6px;
+		box-shadow: 0px 20px 20px 0px rgba(#2c2738, 0.04),
+			0px 4px 8px 0px rgba(#2c2738, 0.04);
+		border: 1px solid #dbe2ea;
+		max-height: 200px;
+		overflow-y: auto;
+		z-index: 100;
+	}
+
+	&__item {
+		color: #756f86;
+		padding: 12px 15px;
+		cursor: pointer;
+
+		&:hover,
+		&_active {
+			background-color: #ebf4f8;
+		}
+	}
+}

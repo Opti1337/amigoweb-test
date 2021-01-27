@@ -46,7 +46,7 @@
 <script>
 import { validationMixin } from 'vuelidate';
 import { required, email } from 'vuelidate/lib/validators';
-import { isTrue, phone, alpha } from '@/validators';
+import { isTrue, phone, name } from '@/validators';
 
 import Button from '@/components/Controls/Button.vue';
 import TextField from '@/components/Controls/TextField.vue';
@@ -80,7 +80,7 @@ export default {
 	},
 	validations: {
 		formData: {
-			name: { required, alpha },
+			name: { required, name },
 			email: { required, email },
 			phone: { required, phone },
 			language: { required },

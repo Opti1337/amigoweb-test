@@ -2,8 +2,8 @@ export function isTrue(value) {
 	return value === true;
 }
 
-export function alpha(value) {
-	return /^[a-zа-я]+$/i.test(value);
+export function name(value) {
+	return /^[a-zа-я\-\s]+$/i.test(value);
 }
 
 export function phone(value) {

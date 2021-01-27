@@ -28,6 +28,7 @@
 		</div>
 		<div class="form__control">
 			<Dropdown
+                label="Язык"
 				placeholder="Язык"
 				:items="languages"
 				v-model="formData.language"

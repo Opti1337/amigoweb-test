@@ -1,6 +1,6 @@
 <template>
 	<div class="dropdown">
-		<div class="dropdown__label" v-if="label">Label</div>
+		<div class="dropdown__label" v-if="label">{{ label }}</div>
 		<button
 			type="button"
 			class="dropdown__trigger"
